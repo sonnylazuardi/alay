@@ -1,0 +1,10 @@
+AndroidApp
+	LinearLayout -> bg:white, margin:0
+		TextView -> text:Coba Lagi
+		ImageView
+			"picture.jpg"            
+		RelativeLayout
+			TextView
+				"Versi 1.0"
+	HorizontalLayout
+		TextView
