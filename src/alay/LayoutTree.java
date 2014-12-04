@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class LayoutTree {
 	private ArrayList <LayoutTree> children = new ArrayList<LayoutTree>();
 	private String type;
+	
 	private ArrayList <Attribute> attributes =  new ArrayList<Attribute>();
 	
 	public LayoutTree(String line) {
@@ -42,12 +43,14 @@ public class LayoutTree {
 	public void addChildren(LayoutTree child) {
 		this.children.add(child);
 	}
+
 	public String getType() {
 		return type;
 	}
 	public void setType(String type) {
 		this.type = type;
 	}
+
 	public ArrayList<Attribute> getAttributes() {
 		return attributes;
 	}
