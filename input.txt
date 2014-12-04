@@ -1,10 +1,3 @@
-AndroidApp
-	LinearLayout -> bg:white, margin:0
-		TextView -> text:Coba Lagi
-		ImageView
-			"picture.jpg"            
-		RelativeLayout
-			TextView
-				"Versi 1.0"
-	HorizontalLayout
-		TextView
+RelativeLayout -> layout_width:fill_parent, layout_height:fill_parent, gravity:center
+	Button -> id:@+id/Button01, layout_width:wrap_content, layout_height:wrap_content, text:Hello World, minHeight:92dp, textSize:22dp, onClick:onMyButtonClick
+	ImageButton -> layout_width:wrap_content, layout_height:wrap_content, src:@drawable/ic_launcher, id:@+id/ImageButton01, layout_toRightOf:@+id/Button01

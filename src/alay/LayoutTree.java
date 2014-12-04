@@ -27,13 +27,33 @@ public class LayoutTree {
 	}
 	public String toString() {
 		String temp = "";
-		temp += this.type;
-		temp += " (";
+		temp += "<" +this.type+" xmlns:android=\"http://schemas.android.com/apk/res/android\" \n";
 		for (Attribute att : this.attributes) {
-			temp += att.getKey() + " : " + att.getValue();
-			temp += ", ";
+			temp += "android:" + att.getKey() + "=\"" + att.getValue() + "\" \n";
 		}
-		temp += ")";
+		temp += ">\n";
+		
+		for (LayoutTree tree: this.children) {
+			temp += iterateXML(tree);
+		}
+		
+		temp += "</" + this.type + ">\n";
+		return temp;
+	}
+	
+	public String iterateXML(LayoutTree parent) {
+		String temp = "";
+		temp += "<" +parent.type+"\n";
+		for (Attribute att : parent.attributes) {
+			temp += "android:" + att.getKey() + "=\"" + att.getValue() + "\" \n";
+		}
+		temp += ">\n";
+		
+		for (LayoutTree tree: parent.children) {
+			temp += iterateXML(tree);
+		}
+		
+		temp += "</" + parent.type + ">\n";
 		return temp;
 	}
 	
