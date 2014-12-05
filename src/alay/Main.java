@@ -25,7 +25,7 @@ public class Main {
 //		System.out.println(layoutTree);
 		
 		 
-		File file = new File("output.txt");
+		File file = new File("actvity_main.xml");
 
 		// if file doesnt exists, then create it
 		if (!file.exists()) {
@@ -37,7 +37,7 @@ public class Main {
 		bw.write(content);
 		bw.close();
 
-		System.out.println("Done");
+		System.out.println("Output file layout android : activity_main.xml");
 	}
 	
 	private int getLevel(String line) {

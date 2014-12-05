@@ -1,3 +1,16 @@
-RelativeLayout -> layout_width:fill_parent, layout_height:fill_parent, gravity:center
-	Button -> id:@+id/Button01, layout_width:wrap_content, layout_height:wrap_content, text:Hello World, minHeight:92dp, textSize:22dp, onClick:onMyButtonClick
-	ImageButton -> layout_width:wrap_content, layout_height:wrap_content, src:@drawable/ic_launcher, id:@+id/ImageButton01, layout_toRightOf:@+id/Button01
+RelativeLayout -> layout_width:fill_parent, layout_height:fill_parent, background:#2ecc71, gravity:center
+	ScrollView -> layout_width:match_parent, layout_height:match_parent 
+		LinearLayout -> layout_width:match_parent, layout_height:match_parent, orientation:vertical 
+			TextView -> layout_width:wrap_content, layout_height:wrap_content, layout_gravity:center_horizontal, layout_marginTop:10dp, text:A-LAY GENERATION, textColor:#fff, textSize:20dp, textStyle:bold 
+			LinearLayout -> layout_width:wrap_content, layout_height:wrap_content, layout_marginLeft:30dp, layout_marginTop:20dp, orientation:horizontal 
+				ImageButton -> id:@+id/Button01, layout_width:wrap_content, layout_height:wrap_content, minHeight:50dp, onClick:onMyButtonClick, src:@drawable/ridho, text:Hello World, textSize:22dp
+				TextView -> layout_width:wrap_content, layout_height:wrap_content, layout_gravity:center_vertical, text:Ridho Akbarisanto, textSize:15dp, textStyle:bold
+			LinearLayout -> layout_width:wrap_content, layout_height:wrap_content, layout_marginLeft:30dp, layout_marginTop:20dp, orientation:horizontal 
+				ImageButton -> id:@+id/Button01, layout_width:wrap_content, layout_height:wrap_content, minHeight:50dp, onClick:onMyButtonClick, src:@drawable/fathan, text:Hello World, textSize:22dp
+				TextView -> layout_width:wrap_content, layout_height:wrap_content, layout_gravity:center_vertical, text:Fathan Adi Pranaya, textSize:15dp, textStyle:bold
+			LinearLayout -> layout_width:wrap_content, layout_height:wrap_content, layout_marginLeft:30dp, layout_marginTop:20dp, orientation:horizontal 
+				ImageButton -> id:@+id/Button01, layout_width:wrap_content, layout_height:wrap_content, minHeight:50dp, onClick:onMyButtonClick, src:@drawable/sonny, text:Hello World, textSize:22dp
+				TextView -> layout_width:wrap_content, layout_height:wrap_content, layout_gravity:center_vertical, text:Sonny Lazuardi Hermawan, textSize:15dp, textStyle:bold
+			LinearLayout -> layout_width:wrap_content, layout_height:wrap_content, layout_marginLeft:30dp, layout_marginTop:20dp, orientation:horizontal 
+				ImageButton -> id:@+id/Button01, layout_width:wrap_content, layout_height:wrap_content, minHeight:50dp, onClick:onMyButtonClick, src:@drawable/yogi, text:Hello World, textSize:22dp
+				TextView -> layout_width:wrap_content, layout_height:wrap_content, layout_gravity:center_vertical, text:Yogi Salomo, textSize:15dp, textStyle:bold

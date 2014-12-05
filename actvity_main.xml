@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#2ecc71"
+	android:gravity="center ">
+<ScrollView 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"
+	android:layout_marginTop="10dp"
+	android:text="A-LAY GENERATION"
+	android:textColor="#fff"
+	android:textSize="20dp"
+	android:textStyle="bold">
+</TextView>
+<LinearLayout 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="30dp"
+	android:layout_marginTop="20dp"
+	android:orientation="horizontal">
+<ImageButton 
+	android:id="@+id/Button01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:minHeight="50dp"
+	android:onClick="onMyButtonClick"
+	android:src="@drawable/ridho"
+	android:text="Hello World"
+	android:textSize="22dp">
+</ImageButton>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical"
+	android:text="Ridho Akbarisanto"
+	android:textSize="15dp"
+	android:textStyle="bold">
+</TextView>
+</LinearLayout>
+<LinearLayout 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="30dp"
+	android:layout_marginTop="20dp"
+	android:orientation="horizontal">
+<ImageButton 
+	android:id="@+id/Button01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:minHeight="50dp"
+	android:onClick="onMyButtonClick"
+	android:src="@drawable/fathan"
+	android:text="Hello World"
+	android:textSize="22dp">
+</ImageButton>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical"
+	android:text="Fathan Adi Pranaya"
+	android:textSize="15dp"
+	android:textStyle="bold">
+</TextView>
+</LinearLayout>
+<LinearLayout 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="30dp"
+	android:layout_marginTop="20dp"
+	android:orientation="horizontal">
+<ImageButton 
+	android:id="@+id/Button01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:minHeight="50dp"
+	android:onClick="onMyButtonClick"
+	android:src="@drawable/sonny"
+	android:text="Hello World"
+	android:textSize="22dp">
+</ImageButton>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical"
+	android:text="Sonny Lazuardi Hermawan"
+	android:textSize="15dp"
+	android:textStyle="bold">
+</TextView>
+</LinearLayout>
+<LinearLayout 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="30dp"
+	android:layout_marginTop="20dp"
+	android:orientation="horizontal">
+<ImageButton 
+	android:id="@+id/Button01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:minHeight="50dp"
+	android:onClick="onMyButtonClick"
+	android:src="@drawable/yogi"
+	android:text="Hello World"
+	android:textSize="22dp">
+</ImageButton>
+<TextView 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical"
+	android:text="Yogi Salomo"
+	android:textSize="15dp"
+	android:textStyle="bold">
+</TextView>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
