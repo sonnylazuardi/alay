@@ -27,9 +27,9 @@ public class LayoutTree {
 	}
 	public String toString() {
 		String temp = "";
-		temp += "<" +this.type+" xmlns:android=\"http://schemas.android.com/apk/res/android\" \n";
+		temp += "<" +this.type+" xmlns:android=\"http://schemas.android.com/apk/res/android\"";
 		for (Attribute att : this.attributes) {
-			temp += "android:" + att.getKey() + "=\"" + att.getValue() + "\" \n";
+			temp += "\n" + ((char) 9) + "android:" + att.getKey() + "=\"" + att.getValue() + "\"";
 		}
 		temp += ">\n";
 		
@@ -43,9 +43,9 @@ public class LayoutTree {
 	
 	public String iterateXML(LayoutTree parent) {
 		String temp = "";
-		temp += "<" +parent.type+"\n";
+		temp += "<" +parent.type+" ";
 		for (Attribute att : parent.attributes) {
-			temp += "android:" + att.getKey() + "=\"" + att.getValue() + "\" \n";
+			temp += "\n" + ((char) 9) + "android:" + att.getKey() + "=\"" + att.getValue() + "\"";
 		}
 		temp += ">\n";
 		
