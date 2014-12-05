@@ -2,7 +2,6 @@ package alay;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -22,9 +21,6 @@ public class Main {
 		content += "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
 		
 		content += layoutTree.toString();
-//		System.out.println(layoutTree);
-		
-		 
 		File file = new File("output.txt");
 
 		// if file doesnt exists, then create it
@@ -52,8 +48,6 @@ public class Main {
 	}
 	
 	public void parse(int ctr, LayoutTree parent, Scanner sc) {
-//		System.out.println(line);
-//		System.out.println(getLevel(line));
     	while (getLevel(line) == ctr) {    		
     		LayoutTree newChild = new LayoutTree(line.trim());
     		parent.addChildren(newChild);
